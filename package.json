@@ -3,18 +3,31 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@antv/l7": "^2.3.0",
+    "@antv/l7-maps": "^2.3.0",
+    "@antv/l7-react": "^2.2.42",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.0",
     "@testing-library/user-event": "^12.2.2",
+    "antd": "^4.8.4",
+    "axios": "^0.21.0",
+    "echarts": "^4.9.0",
+    "moment": "^2.29.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0",
+    "redux-saga": "^1.1.3",
+    "styled-components": "^5.2.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -34,5 +47,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.13.1",
+    "customize-cra": "^1.0.0",
+    "react-app-rewired": "^2.1.6",
+    "redux-devtools-extension": "^2.13.8"
   }
 }
