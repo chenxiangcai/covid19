@@ -37,20 +37,36 @@ class Index extends Component {
                                    }}
                         >综合信息</Menu.Item>
                         <Menu.Item
-                            key="/covid19/China"
+                            key="/covid19/china"
                             icon={<HeatMapOutlined/>}
                             onClick={({key}) => {
                                 this.toggleRoute(key)
                                 this.fixKey(key)
                             }}>全国疫情图</Menu.Item>
                         <Menu.Item
-                            key="/covid19/World"
+                            key="/covid19/world"
                             icon={<RadarChartOutlined/>}
                             onClick={({key}) => {
                                 this.toggleRoute(key)
                                 this.fixKey(key)
                             }}
                         >全球疫情图</Menu.Item>
+                        <Menu.Item
+                            key="/covid19/heatmapofchina"
+                            icon={<RadarChartOutlined/>}
+                            onClick={({key}) => {
+                                this.toggleRoute(key)
+                                this.fixKey(key)
+                            }}
+                        >全国疫情热力图</Menu.Item>
+                        <Menu.Item
+                            key="/covid19/heatmapofworld"
+                            icon={<RadarChartOutlined/>}
+                            onClick={({key}) => {
+                                this.toggleRoute(key)
+                                this.fixKey(key)
+                            }}
+                        >全球疫情热力图</Menu.Item>
                     </Menu>
                 </Header>
                 <Content className="site-layout" style={{padding: '32px 50px', marginTop: 64}}>

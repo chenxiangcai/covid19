@@ -6,7 +6,7 @@
 */
 import {takeEvery} from "redux-saga/effects";
 import {sagas as home} from "../pages/home/";
-import {sagas as world} from '../pages/worldMap/'
+import {sagas as world} from '../pages/world_map/'
 
 let {LOADDATA} = home.types;
 let {LOADWORLDDATA} = world.types;

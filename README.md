@@ -2,9 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## 1. 需要初始化两次依赖包：
+## 1. 需要初始化3次依赖包：
    - covid19根文件夹下 `npm i`
    - server文件夹下  `npm i` 
+   - covidmap下 `npm i`
+
    
 ## 2. server文件夹下启动app.js (启动后台服务)
 

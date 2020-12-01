@@ -63,7 +63,6 @@ class Home extends Component {
 
     render() {
         const {data, detailData, nowData, loading, broadcast} = this.props
-        console.log(broadcast)
         return (
             <HomeWrap>
                 <Loading loading={loading}/>
@@ -174,8 +173,9 @@ class Home extends Component {
                     <div className='desc'>{detailData && detailData.sourceDesc}</div>
                 </div>
 
-                <Card title="实时播报" headStyle={headStyle}>
-                    <Broadcast/>
+                <Card className='bottom20' title="实时播报" headStyle={headStyle}>
+                    <Broadcast data={broadcast}/>
+                    <p className='shadow'/>
                 </Card>
             </HomeWrap>
         );

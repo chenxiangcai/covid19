@@ -2,55 +2,75 @@ html,
 body,
 #root,
 .ant-layout {
-  /*  height: 100%;*/
+    /*  height: 100%;*/
 }
 
 #components-layout-demo-fixed .logo {
-     width: 120px;
-     height: 31px;
-     background: rgba(255, 255, 255, 0.2);
-     margin: 16px 24px 16px 0;
-     float: left;
- }
+    width: 120px;
+    height: 31px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px 24px 16px 0;
+    float: left;
+}
+
 .site-layout .site-layout-background {
     background: #fff;
 
 }
 
-.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
-.clearfloat{zoom:1}
-.num{
-    font-weight:600;
-    font-size:27px;
-    display:block;
+.clearfloat:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0
 }
-.no1{
-    color:#C02425
+
+.clearfloat {
+    zoom: 1
 }
-.no2{
-    color:#0f9b0f
+
+.num {
+    font-weight: 600;
+    font-size: 27px;
+    display: block;
 }
-.no3{
-    color:#bdc3c7
+
+.no1 {
+    color: #C02425
 }
-.no4{
-    color:#F2C94C
+
+.no2 {
+    color: #0f9b0f
 }
-.no5{
-    color:#fc4a1a
+
+.no3 {
+    color: #bdc3c7
 }
-.no6{
-    color:#f4791f
+
+.no4 {
+    color: #F2C94C
 }
-.no7{
+
+.no5 {
+    color: #fc4a1a
+}
+
+.no6 {
+    color: #f4791f
+}
+
+.no7 {
     color: rgb(247, 76, 49);
 }
 
-em{
+em {
     font-style: normal;
 }
 
-.grid-bottom{
-    font-weight:600;
+.grid-bottom {
+    font-weight: 600;
 }
+
+
 
