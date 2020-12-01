@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Layout, Menu} from 'antd';
 import {withRouter} from "react-router-dom";
-import {HeatMapOutlined, RadarChartOutlined, UnorderedListOutlined,} from '@ant-design/icons';
+import {HeatMapOutlined, RadarChartOutlined, UnorderedListOutlined,AimOutlined,AlertOutlined,DotChartOutlined} from '@ant-design/icons';
 import {getStore, setStore} from "../../utils/storage";
 
 
@@ -38,7 +38,7 @@ class Index extends Component {
                         >综合信息</Menu.Item>
                         <Menu.Item
                             key="/covid19/china"
-                            icon={<HeatMapOutlined/>}
+                            icon={<AimOutlined />}
                             onClick={({key}) => {
                                 this.toggleRoute(key)
                                 this.fixKey(key)
@@ -53,7 +53,7 @@ class Index extends Component {
                         >全球疫情图</Menu.Item>
                         <Menu.Item
                             key="/covid19/heatmapofchina"
-                            icon={<RadarChartOutlined/>}
+                            icon={<AlertOutlined/>}
                             onClick={({key}) => {
                                 this.toggleRoute(key)
                                 this.fixKey(key)
@@ -61,7 +61,7 @@ class Index extends Component {
                         >全国疫情热力图</Menu.Item>
                         <Menu.Item
                             key="/covid19/heatmapofworld"
-                            icon={<RadarChartOutlined/>}
+                            icon={<DotChartOutlined/>}
                             onClick={({key}) => {
                                 this.toggleRoute(key)
                                 this.fixKey(key)

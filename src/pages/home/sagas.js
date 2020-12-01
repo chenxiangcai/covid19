@@ -10,7 +10,6 @@ import * as types from './action-types'
 import {get} from '../../utils/http'
 
 function* loadData() {
-    console.log(2)
     try {
         // 获取组件dispatch action的数据 在此可获取组件state
         const {data} = yield select(state => (state.home.action))

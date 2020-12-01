@@ -1,5 +1,14 @@
 const express = require('express');
+const path = require('path');
 const app = express();
+app.use(express.static(path.join(__dirname, 'build')));
+
+app.get('/heartmapofchina', function (req, res) {
+    res.sendFile(path.join(__dirname, 'build','heart_map_china', 'index.html'));
+});
+app.get('/heartmapofworld', function (req, res) {
+    res.sendFile(path.join(__dirname, 'build','heart_map_world', 'index.html'));
+});
 
 app.all('/*', function (req, res, next) {
     res.header('Access-Control-Allow-Origin', '*')
