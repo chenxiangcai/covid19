@@ -8,7 +8,7 @@
 
 ## 3. 在covid19根文件夹下 `npm start`
 
-## 4. 当前版本待修复：接口不稳定导致的渲染bug
+## 4. 当前版本待修复：接口不稳定导致的渲染bug => 如遇bug请再次打开loaclhost:3000端口即可。
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
