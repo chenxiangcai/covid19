@@ -1,9 +1,10 @@
-import {LOADWORLDDATA, LOADWORLDDATASUCCESS} from './action-types'
+import {LOADERROR, LOADWORLDDATA, LOADWORLDDATASUCCESS} from './action-types'
 
 
 const defaultState = {
     data: [],
-    loading: false
+    loading: false,
+    isError: false,
 };
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -20,6 +21,13 @@ export default (state = defaultState, action) => {
                 data: action.data.world_list,
                 loading: false
             }
+        case LOADERROR: {
+            return {
+                ...state,
+                isError: true,
+                loading: true
+            }
+        }
         default:
             return state;
     }

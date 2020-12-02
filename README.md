@@ -1,19 +1,17 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## 1. 需要初始化3次依赖包：
-   - covid19根文件夹下 `npm i`
-   - server文件夹下  `npm i` 
-   - covidmap下 `npm i`
+## 1. 项目需要初始化 2 次依赖包：
+   - covid19项目根文件夹下 `npm i`
+   - server(服务器)文件夹下  `npm i`
 
    
-## 2. server文件夹下启动app.js (启动后台服务)
+## 2. server文件夹下,进入app.js右键运行即可 (启动后台服务)
 
-## 3. 在covid19根文件夹下 `npm start`
+## 3. 在covid19项目根文件夹下 `npm start`
+
+## 4. 已修复:
+- [x] 第三方接口不稳定导致的渲染bug,新增网络不稳定提示
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.

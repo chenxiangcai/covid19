@@ -24,7 +24,7 @@ function* loadData() {
         }))
 
         // 获取成功 发送成功的action
-        if (China_list && China_detail) {
+        if (China_list.length > 0 && China_detail !== null && broadcast_list.length > 0) {
             yield put({
                 type: types.LOADDSUCCESS,
                 data: {

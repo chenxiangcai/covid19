@@ -13,5 +13,6 @@ module.exports = async (req, res) => {
             error:e
         })
     }
+    console.log(data)
     res.send(data.data.newslist)
 }

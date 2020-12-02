@@ -2,8 +2,8 @@ import Home from "../pages/home/Home";
 import ChinaMap from "../pages/china_map/ChinaMap";
 import WorldMap from "../pages/world_map/WorldMap";
 import Error404 from "../pages/error/Error404";
-import HeatMapPage from "../pages/heartMap_Wrold";
-import HeartMapChina from "../pages/heartMap_China";
+import HeatMapPage from "../pages/heatMap_Wrold";
+import HeartMapChina from "../pages/heatMap_China";
 
 export const projectRoutes = [{
     path: '/covid19',

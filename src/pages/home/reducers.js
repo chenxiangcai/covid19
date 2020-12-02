@@ -5,7 +5,7 @@
 * @time: 2020-11-20 22:47:15
 */
 
-import {LOADDATA, LOADDSUCCESS} from './action-types'
+import {LOADDATA, LOADDSUCCESS, LOADERROR} from './action-types'
 
 //home组件 默认状态
 const defaultState = {
@@ -13,7 +13,8 @@ const defaultState = {
     nowData: [],
     broadcast: null,
     detailData: null,
-    loading: false
+    loading: false,
+    isError: false,
 };
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -33,7 +34,13 @@ export default (state = defaultState, action) => {
                 nowData: action.data.nowData,
                 broadcast: action.data.broadcast_list
             }
-
+        case LOADERROR: {
+            return {
+                ...state,
+                loading: true,
+                isError: true
+            }
+        }
         default:
             return state;
     }

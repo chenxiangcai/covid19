@@ -7,7 +7,7 @@ function* loadWorldData() {
         // 获取组件dispatch action的数据 在此可获取组件state
         const {data} = yield select(state => (state.world.action))
         const world_list = yield get(data)
-        if (world_list) {
+        if (world_list['Countries'].length > 0) {
             yield put({
                 type: types.LOADWORLDDATASUCCESS,
                 data: {world_list}
@@ -19,7 +19,9 @@ function* loadWorldData() {
         }
 
     } catch (e) {
-        yield put({})
+        yield put({
+            type: types.LOADERROR
+        })
     }
 }
 

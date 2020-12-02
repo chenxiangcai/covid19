@@ -1,36 +1,35 @@
 export const renderWorldChart = (data) => {
-
     const {Countries} = data
-    if(Countries.some(item=>item.Country ==="United States of America")){
-
-    // fixed echarts与接口 国家名字不匹配
-    const Usa = Countries.find(item => (item.Country === "United States of America"))
-    Usa.Country = 'United States'
-    const Russian = Countries.find(item => (item.Country === "Russian Federation"))
-    Russian.Country = "Russia"
-    const Korea = Countries.find(item => (item.Country === "Korea (South)"))
-    Korea.Country = "Korea"
-    const Iran = Countries.find(item => (item.Country === "Iran, Islamic Republic of"))
-    Iran.Country = "Iran"
-    const Congo = Countries.find(item => (item.Country === "Congo (Kinshasa)"))
-    Congo.Country = "Dem. Rep. Congo"
-    const Congo2 = Countries.find(item => (item.Country === "Congo (Brazzaville)"))
-    Congo2.Country = "Congo"
-    const Tanzania = Countries.find(item => (item.Country === "Tanzania, United Republic of"))
-    Tanzania.Country = "Tanzania"
-    const SouthSudan = Countries.find(item => (item.Country === "South Sudan"))
-    SouthSudan.Country = "S. Sudan"
-    const CentralAfrican = Countries.find(item => (item.Country === "Central African Republic"))
-    CentralAfrican.Country = "Central African Rep."
-    const VietNam = Countries.find(item => (item.Country === "Viet Nam"))
-    VietNam.Country = "Vietnam"
-    const DominicanRepublic = Countries.find(item => (item.Country === "Dominican Republic"))
-    DominicanRepublic.Country = "Dominican Rep."
-    const CzechRepublic = Countries.find(item => (item.Country === "Czech Republic"))
-    CzechRepublic.Country = "Czech Rep."
-    const Venezuela = Countries.find(item => (item.Country === "Venezuela (Bolivarian Republic)"))
-    Venezuela.Country = "Venezuela"
-
+    if (Countries) {
+        if (Countries.some(item => item.Country === "United States of America")) {
+            // fixed echarts与接口 国家名字不匹配
+            const Usa = Countries.find(item => (item.Country === "United States of America"))
+            Usa.Country = 'United States'
+            const Russian = Countries.find(item => (item.Country === "Russian Federation"))
+            Russian.Country = "Russia"
+            const Korea = Countries.find(item => (item.Country === "Korea (South)"))
+            Korea.Country = "Korea"
+            const Iran = Countries.find(item => (item.Country === "Iran, Islamic Republic of"))
+            Iran.Country = "Iran"
+            const Congo = Countries.find(item => (item.Country === "Congo (Kinshasa)"))
+            Congo.Country = "Dem. Rep. Congo"
+            const Congo2 = Countries.find(item => (item.Country === "Congo (Brazzaville)"))
+            Congo2.Country = "Congo"
+            const Tanzania = Countries.find(item => (item.Country === "Tanzania, United Republic of"))
+            Tanzania.Country = "Tanzania"
+            const SouthSudan = Countries.find(item => (item.Country === "South Sudan"))
+            SouthSudan.Country = "S. Sudan"
+            const CentralAfrican = Countries.find(item => (item.Country === "Central African Republic"))
+            CentralAfrican.Country = "Central African Rep."
+            const VietNam = Countries.find(item => (item.Country === "Viet Nam"))
+            VietNam.Country = "Vietnam"
+            const DominicanRepublic = Countries.find(item => (item.Country === "Dominican Republic"))
+            DominicanRepublic.Country = "Dominican Rep."
+            const CzechRepublic = Countries.find(item => (item.Country === "Czech Republic"))
+            CzechRepublic.Country = "Czech Rep."
+            const Venezuela = Countries.find(item => (item.Country === "Venezuela (Bolivarian Republic)"))
+            Venezuela.Country = "Venezuela"
+        }
     }
     const newData = Countries.map(item => (
         {
@@ -45,7 +44,7 @@ export const renderWorldChart = (data) => {
 
 
     const option = {
-       tooltip: {
+        tooltip: {
             trigger: 'item',
             formatter: function (params) {
                 if (params.data === undefined) {

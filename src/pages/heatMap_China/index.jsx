@@ -1,18 +1,18 @@
 import React, {Component} from 'react';
-import {HeatMapWrap} from './styled'
+import DocumentTitle from 'react-document-title'
 
-class HeatMapPage extends Component {
+class HeartMapChina extends Component {
     render() {
         return (
-            <HeatMapWrap>
-                <iframe src='http://localhost/heartmapofworld'
+            <DocumentTitle title='国内疫情热力图'>
+                <iframe src='http://localhost/heartmapofchina'
                         title='map'
                         width={'100%'}
                         height={800}
                         style={{border: 0, borderRadius: 7}}/>
-            </HeatMapWrap>
+            </DocumentTitle>
         );
     }
 }
 
-export default HeatMapPage
+export default HeartMapChina;
