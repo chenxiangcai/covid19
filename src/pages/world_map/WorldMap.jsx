@@ -45,7 +45,12 @@ const mapDispatch = dispatch => ({
 class WorldMap extends Component {
     componentDidMount() {
         if (this.props.data.length === 0) this.props.loadWorldData()
-        this.props.isError && message.warning('出错啦！网络暂时堵塞中 ···')
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (prevProps !== prevState) {
+            this.props.isError && message.warning('出错啦！网络暂时堵塞中 ···')
+        }
     }
 
     render() {

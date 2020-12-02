@@ -24,7 +24,7 @@ class HeatMap extends Component {
         scene.on('loaded', () => {
             // 请求数据
             fetch(
-                'http://localhost/world_heart_map'
+                'http://localhost:7777/world_heart_map'
             )
                 .then(res => res.json())
                 .then(data => {

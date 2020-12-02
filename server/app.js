@@ -20,5 +20,5 @@ app.all('/*', function (req, res, next) {
 })
 
 require('./routes')(app)
-app.listen(80)
+app.listen(7777)
 console.log('服务器启动成功')

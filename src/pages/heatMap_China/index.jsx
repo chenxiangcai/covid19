@@ -5,7 +5,7 @@ class HeartMapChina extends Component {
     render() {
         return (
             <DocumentTitle title='国内疫情热力图'>
-                <iframe src='http://localhost/heartmapofchina'
+                <iframe src='http://localhost:7777/heartmapofchina'
                         title='map'
                         width={'100%'}
                         height={800}

@@ -7,7 +7,7 @@ class HeatMapPage extends Component {
         return (
             <DocumentTitle title='全球疫情热力图'>
                 <HeatMapWrap>
-                    <iframe src='http://localhost/heartmapofworld'
+                    <iframe src='http://localhost:7777/heartmapofworld'
                             title='map'
                             width={'100%'}
                             height={800}

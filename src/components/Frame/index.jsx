@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Layout, Menu} from 'antd';
 import {withRouter} from "react-router-dom";
-import {HeatMapOutlined, RadarChartOutlined, UnorderedListOutlined,AimOutlined,AlertOutlined,DotChartOutlined} from '@ant-design/icons';
+import { RadarChartOutlined, UnorderedListOutlined,AimOutlined,AlertOutlined,DotChartOutlined} from '@ant-design/icons';
 import {getStore, setStore} from "../../utils/storage";
 
 

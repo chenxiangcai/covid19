@@ -11,6 +11,7 @@
 
 ## 4. 已修复:
 - [x] 第三方接口不稳定导致的渲染bug,新增网络不稳定提示
+- [x] 部分机型80端口占用导致的项目无法启动问题
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

@@ -58,7 +58,12 @@ class Home extends Component {
     componentDidMount() {
         // 仅第一次页面加载请求数据
         if (this.props.data.length === 0) this.props.loadData()
-        this.props.isError && message.warning('出错啦！网络暂时堵塞中 ···')
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (prevProps !== prevState) {
+            this.props.isError && message.warning('出错啦！网络暂时堵塞中 ···')
+        }
     }
 
 
